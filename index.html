@@ -1,33 +1,59 @@
-￼
 <!DOCTYPE html>
-<html>
-
+<html class="no-js" lang="ja">
 <head>
-    <meta charset="utf-8">
-    <title> 食記-和民日本料理 Watami - Kate Tsai </title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Chapter 06-04 &#xB7; jQuery 最高の教科書</title>
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/colorbox.css">
+<link rel="stylesheet" href="./css/main.css">
+<script src="./js/vendor/modernizr.custom.min.js"></script>
+<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="./js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+<script src="./js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="./js/vendor/masonry.pkgd.min.js"></script>
+<script src="./js/vendor/jquery.colorbox-min.js"></script>
+<script src="./js/main.js"></script>
 </head>
-
 <body>
-    <h1>和民日本料理</h1>
-    <p> 看電影前吃和民 </p>
-    <h2>Sep 29, 2015</h2>
-    <p> 第一次吃和民日本料理，價位可以接受，點了較高價格兩人套餐大約是1,300元，內容如下：</p>
-    <img src="S__1220611.jpg" width "600px" height="600">
-    <ol>
-        <li> 鍋鍋</li>
-        <li> 飯飯</li>
-        <li> 魚魚</li>
-        <li> 蛤仔湯</li>
-        <li> 都是小貓吃的飯</li>
-    </ol>
-    <p> 最期待的串燒（和民的本體）：</p>
-    <img src="S__1220612.jpg" width "600px" height="600">
-    <blockquote>
-        <br> 烤雞
-        <br> 雞皮
-        <br> 雞軟骨
-        <br> 都很乖
-    </blockquote>
-</body>
 
+<header class="page-header" role="banner">
+    <div class="inner clearfix">
+        <h1 class="site-logo"><a href="./"><img src="./img/logo.png" alt="Shiftbrain" height="21" width="169"></a></h1>
+        <form class="filter-form" id="gallery-filter">
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-all" value="all" checked>
+                <label for="filter-all">All</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-people" value="people">
+                <label for="filter-people">People</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-animals" value="animals">
+                <label for="filter-animals">Animals</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-nature" value="nature">
+                <label for="filter-nature">Nature</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-plantes" value="plantes">
+                <label for="filter-plantes">Plantes</label>
+            </span>
+            <span class="form-item">
+                <input type="radio" name="filter" id="filter-architects" value="architects">
+                <label for="filter-architects">Architects</label>
+            </span>
+        </form>
+    </div>
+</header>
+
+<div class="page-main" role="main">
+    <ul class="gallery" id="gallery"></ul>
+    <button class="load-more" id="load-more">Load more</button>
+</div>
+
+</body>
 </html>
